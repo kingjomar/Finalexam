@@ -5,7 +5,7 @@
    
     <div class="card mt-5 shadow-sm">
                     <div class="card-header bg-primary text-white">
-                        <h4 class="mb-0">Employee List</h4>
+                        <h4 class="mb-0">Users</h4>
                     </div>
                     <div> <a href="{{ route('about')}}" class="btn btn-primary btn-sm">
                                             <i class="fa fa-pencil-square-o"></i> ADD
@@ -15,10 +15,10 @@
                             <thead class="thead-light">
                               <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">First Name</th>
-                                <th scope="col">Last Name</th>
-                                <th scope="col">DOB</th>
-                                <th scope="col">Phone</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Password</th>
+                                <th scope="col">Confirm Password</th>
                                 <th scope="col">Action</th>
                               </tr>
                             </thead>
