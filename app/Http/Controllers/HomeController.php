@@ -1,11 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Employee;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+
+    public function index()
+    {
+        // Fetch all employees from the database
+        $employees = Employee::all();
+
+        // Pass the employees to the view
+        return view('home', compact('employees'));
+    }
     /**
      * Create a new controller instance.
      *
@@ -21,8 +30,6 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('home');
-    }
+
+
 }

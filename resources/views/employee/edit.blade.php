@@ -14,21 +14,21 @@
             <div class="form-area">
                 <form method="POST" action="{{ route('employee.index', $employee->id) }}">
                 {!! csrf_field() !!}
-                  @method("PATCH")
+                  @method("patch")
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Student Name</label>
+                            <label>Employee Name</label>
                             <input type="text" class="form-control" name="emp_name" value="{{ $employee->first_name }}">
                             <input type="text" class="form-control" name="emp_name" value="{{ $employee->last_name }}">
                         </div>
                         <div class="col-md-6">
-                            <label>Student DOB</label>
+                            <label>DOB</label>
                             <input type="date" class="form-control" name="dob" value="{{ $employee->dob }}">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <label>Address</label>
+                            <label>Phone</label>
                             <input type="text" class="form-control" name="phone" value="{{ $employee->phone }}">
                         </div>
 
