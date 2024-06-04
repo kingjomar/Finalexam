@@ -32,7 +32,7 @@
                   <div class="icon">
                     <i class="inner-icon ion ion-bag"></i>
                   </div>
-                  <a href="{{ route('about') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                  <a href="{{ route('employee.index') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
              </div></div>
         

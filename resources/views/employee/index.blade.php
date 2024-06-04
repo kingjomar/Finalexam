@@ -7,6 +7,9 @@
                     <div class="card-header bg-primary text-white">
                         <h4 class="mb-0">Employee List</h4>
                     </div>
+                    <div> <a href="{{ route('about')}}" class="btn btn-primary btn-sm">
+                                            <i class="fa fa-pencil-square-o"></i> ADD
+                                        </a></div>
                     <div class="card-body bg-light">
                         <table class="table table-bordered table-striped">
                             <thead class="thead-light">
